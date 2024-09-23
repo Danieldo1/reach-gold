@@ -318,7 +318,7 @@ const ReachGold = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-full max-w-7xl mx-auto container">
+    <div className="flex flex-col items-center justify-center min-h-screen max-w-7xl mx-auto content">
       <div className=" flex items-center mb-4 justify-center gap-5">
         <h1 className="text-4xl font-bold  text-center">Reach Gold</h1>
         <button onClick={() => setOpenHighScoresModal(true)}>
