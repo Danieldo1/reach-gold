@@ -318,19 +318,21 @@ const ReachGold = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen max-w-7xl mx-auto content">
-      <div className=" flex items-center mb-4 justify-center gap-5">
-        <h1 className="text-4xl font-bold  text-center">Reach Gold</h1>
-        <button onClick={() => setOpenHighScoresModal(true)}>
-          <Image
-            src="/gold.png"
-            alt="gold"
-            width={30}
-            height={30}
-            className="animate-wiggle"
-          />
-        </button>
-      </div>
+    <div className="flex flex-col items-center justify-center max-w-7xl mx-auto content overflow-hidden">
+       <header className="w-fit p-4 bg-white ">
+        <h1 className="text-2xl md:text-4xl font-bold text-center flex items-center justify-center gap-5">
+          Reach Gold
+          <button onClick={() => setOpenHighScoresModal(true)}>
+            <Image
+              src="/gold.png"
+              alt="gold"
+              width={30}
+              height={30}
+              className="animate-wiggle"
+            />
+          </button>
+        </h1>
+      </header>
       <div className="mb-4 text-xl">
         <span className="mr-4">Gold Tiles: {goldTiles}</span>
         <span>Score: {score}</span>
