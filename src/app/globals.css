@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --vh: 1vh;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,6 +13,10 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+.h-screen-custom {
+  height: 100vh; 
+  height: calc(var(--vh, 1vh) * 100);
 }
 
 body {

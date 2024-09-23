@@ -318,9 +318,10 @@ const ReachGold = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center max-w-7xl mx-auto content overflow-hidden">
-       <header className="w-fit p-4 bg-white ">
-        <h1 className="text-2xl md:text-4xl font-bold text-center flex items-center justify-center gap-5">
+    <div className="flex flex-col relative items-center justify-center h-screen-custom max-w-7xl mx-auto content overflow-hidden">
+       
+       <header className="w-fit p-4 bg-white absolute flex flex-col top-[20%] items-center justify-center gap-5">
+        <h1 className="text-2xl md:text-4xl font-bold text-center ">
           Reach Gold
           <button onClick={() => setOpenHighScoresModal(true)}>
             <Image
@@ -332,13 +333,13 @@ const ReachGold = () => {
             />
           </button>
         </h1>
-      </header>
-      <div className="mb-4 text-xl">
+      <div className="mb-4 text-xl  ">
         <span className="mr-4">Gold Tiles: {goldTiles}</span>
         <span>Score: {score}</span>
       </div>
+      </header>
       <div
-        className="grid grid-cols-4 gap-2 bg-white p-4 rounded-lg shadow-lg"
+        className="grid grid-cols-4 gap-2 bg-white p-4 rounded-lg shadow-lg z-1 fixed"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
