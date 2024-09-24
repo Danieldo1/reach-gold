@@ -8,12 +8,6 @@
   --vh: 1vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 .h-screen-custom {
   height: 100vh; 
   height: calc(var(--vh, 1vh) * 100);

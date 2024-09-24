@@ -320,7 +320,7 @@ const ReachGold = () => {
   return (
     <div className="flex flex-col relative items-center justify-center h-screen-custom max-w-7xl mx-auto content overflow-hidden">
        
-       <header className="w-fit p-4 bg-white absolute flex flex-col top-[20%] items-center justify-center gap-5">
+       <header className="w-fit p-4 bg-white fixed flex flex-col top-[10%] items-center justify-center gap-5">
         <h1 className="text-2xl md:text-4xl font-bold text-center ">
           Reach Gold
           <button onClick={() => setOpenHighScoresModal(true)}>
