@@ -329,7 +329,7 @@ const ReachGold = () => {
               alt="gold"
               width={30}
               height={30}
-              className="animate-wiggle"
+              className="animate-wiggle ml-5"
             />
           </button>
         </h1>
